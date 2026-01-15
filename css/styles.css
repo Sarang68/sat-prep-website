@@ -172,6 +172,19 @@ a:hover {
     font-weight: 600;
 }
 
+.logo-img {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 45px;
+    }
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -243,6 +256,22 @@ a:hover {
 
 .hamburger::after {
     top: 8px;
+}
+
+/* Promotional Banner Section */
+.promo-banner {
+    padding: 40px 0;
+    background-color: var(--bg-light);
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
 }
 
 /* Hero Section */
@@ -1160,6 +1189,20 @@ a:hover {
     background-color: var(--bg-light);
     border-left: 4px solid var(--primary-color);
     color: var(--text-secondary);
+}
+
+.system-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patent-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
 }
 
 .system-mockup {
